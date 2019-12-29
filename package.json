@@ -1,0 +1,15 @@
+{
+  "name": "poketools-data",
+  "version": "0.1.0",
+  "description": "pokemon tools data lib",
+  "main": "index.js",
+  "scripts": {
+    "build": "bash bin/build.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leo.Hu",
+  "license": "ISC",
+  "dependencies": {
+    "node-xlsx": "^0.15.0"
+  }
+}
