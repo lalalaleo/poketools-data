@@ -3,8 +3,11 @@ const pokemonsData = require('../data/pokemons');
 const create = require('../util/createJSON');
 
 let arr = [];
-pokemonsData['Normal'].forEach((row, rowId) => {
-    if(rowId > 0) arr.push(new POKEMON(row, pokemonsData.Normal[0]));
+pokemonsData.normal.forEach((row, rowId) => {
+    if(rowId > 0) arr.push(new POKEMON(row, pokemonsData.normal[0]));
+});
+pokemonsData.regional.forEach((row, rowId) => {
+    if(rowId > 0) arr.push(new POKEMON(row, pokemonsData.regional[0]));
 });
 
 create('lib/pokemons.json', arr);
